@@ -1,0 +1,36 @@
+{"timestamp": "2026-09-29T17:37:15.763645Z", "level": "info", "event": "Loaded GROQ_API_KEY from individual env var"}
+{"timestamp": "2026-09-29T17:37:15.767829Z", "level": "info", "event": "Loaded GOOGLE_API_KEY from individual env var"}
+{"keys": {"GROQ_API_KEY": "gsk_a9...", "GOOGLE_API_KEY": "AQ.Ab8..."}, "timestamp": "2026-09-29T17:37:15.770011Z", "level": "info", "event": "API keys loaded"}
+{"config_keys": ["embedding_model", "retriever", "llm"], "timestamp": "2026-09-29T17:37:15.787352Z", "level": "info", "event": "YAML config loaded"}
+{"session_id": "session_20260929_230715_58aadeb6", "temp_dir": "data\\session_20260929_230715_58aadeb6", "faiss_dir": "faiss_index\\session_20260929_230715_58aadeb6", "sessionized": true, "timestamp": "2026-09-29T17:37:15.807019Z", "level": "info", "event": "ChatIngestor initialized"}
+{"uploaded": "C:\\Code\\End2endProject\\data\\Rukhsar_GenAI.pdf", "saved_as": "data\\session_20260929_230715_58aadeb6\\34a35000.pdf", "timestamp": "2026-09-29T17:37:15.819964Z", "level": "info", "event": "File saved for ingestion"}
+{"count": 4, "timestamp": "2026-09-29T17:37:16.514256Z", "level": "info", "event": "Documents loaded"}
+{"chunks": 48, "chunk_size": 200, "overlap": 20, "timestamp": "2026-09-29T17:37:16.517062Z", "level": "info", "event": "Documents split"}
+{"model": "models/gemini-embedding-001", "timestamp": "2026-09-29T17:37:16.519760Z", "level": "info", "event": "Loading embedding model"}
+HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-embedding-001:batchEmbedContents "HTTP/1.1 200 OK"
+Loading faiss with AVX2 support.
+Could not load library with AVX2 support due to:
+ModuleNotFoundError("No module named 'faiss.swigfaiss_avx2'")
+Loading faiss.
+Successfully loaded faiss.
+HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-embedding-001:batchEmbedContents "HTTP/1.1 200 OK"
+{"added": 1, "index": "faiss_index\\session_20260929_230715_58aadeb6", "timestamp": "2026-09-29T17:37:28.699063Z", "level": "info", "event": "FAISS index updated"}
+{"k": 5, "fetch_k": 20, "lambda_mult": 0.5, "timestamp": "2026-09-29T17:37:28.731621Z", "level": "info", "event": "Using MMR search"}
+{"timestamp": "2026-09-29T17:37:28.736960Z", "level": "info", "event": "Loaded GROQ_API_KEY from individual env var"}
+{"timestamp": "2026-09-29T17:37:28.741258Z", "level": "info", "event": "Loaded GOOGLE_API_KEY from individual env var"}
+{"keys": {"GROQ_API_KEY": "gsk_a9...", "GOOGLE_API_KEY": "AQ.Ab8..."}, "timestamp": "2026-09-29T17:37:28.741698Z", "level": "info", "event": "API keys loaded"}
+{"config_keys": ["embedding_model", "retriever", "llm"], "timestamp": "2026-09-29T17:37:28.748187Z", "level": "info", "event": "YAML config loaded"}
+{"provider": "google", "model": "gemini/gemini-3.8-flash", "timestamp": "2026-09-29T17:37:28.748694Z", "level": "info", "event": "Loading LLM"}
+{"session_id": "session_20260929_230715_58aadeb6", "timestamp": "2026-09-29T17:37:28.895249Z", "level": "info", "event": "LLM loaded successfully"}
+{"session_id": "session_20260929_230715_58aadeb6", "timestamp": "2026-09-29T17:37:28.895853Z", "level": "info", "event": "ConversationalRAG initialized"}
+{"timestamp": "2026-09-29T17:37:28.898255Z", "level": "info", "event": "Loaded GROQ_API_KEY from individual env var"}
+{"timestamp": "2026-09-29T17:37:28.898701Z", "level": "info", "event": "Loaded GOOGLE_API_KEY from individual env var"}
+{"keys": {"GROQ_API_KEY": "gsk_a9...", "GOOGLE_API_KEY": "AQ.Ab8..."}, "timestamp": "2026-09-29T17:37:28.899061Z", "level": "info", "event": "API keys loaded"}
+{"config_keys": ["embedding_model", "retriever", "llm"], "timestamp": "2026-09-29T17:37:28.902948Z", "level": "info", "event": "YAML config loaded"}
+{"model": "models/gemini-embedding-001", "timestamp": "2026-09-29T17:37:28.903342Z", "level": "info", "event": "Loading embedding model"}
+{"session_id": "session_20260929_230715_58aadeb6", "timestamp": "2026-09-29T17:37:29.037121Z", "level": "info", "event": "LCEL graph built successfully"}
+{"index_path": "faiss_index\\session_20260929_230715_58aadeb6", "index_name": "index", "search_type": "mmr", "k": 5, "fetch_k": 20, "lambda_mult": 0.5, "session_id": "session_20260929_230715_58aadeb6", "timestamp": "2026-09-29T17:37:29.037645Z", "level": "info", "event": "FAISS retriever loaded successfully"}
+AFC is enabled with max remote calls: 10.
+Direct use of automatic function calling (AFC) in Models.generate_content is not recommended. Instead, we recommend to use AFC in Chat.send_message. Similarly, direct use of AFC in Models.generate_content_stream is not recommended. Instead, we recommend to use AFC in Chat.send_message_stream.
+HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini/gemini-3.8-flash:generateContent "HTTP/1.1 404 Not Found"
+{"error": "Error calling model 'gemini/gemini-3.8-flash' (Not Found): 404 Not Found. {'message': '', 'status': 'Not Found'}", "timestamp": "2026-09-29T17:38:46.061809Z", "level": "error", "event": "Failed to invoke ConversationalRAG"}

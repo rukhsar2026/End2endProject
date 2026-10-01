@@ -1,0 +1,5 @@
+{"timestamp": "2026-09-29T15:13:34.946275Z", "level": "info", "event": "Loaded GROQ_API_KEY from individual env var"}
+{"timestamp": "2026-09-29T15:13:34.950698Z", "level": "info", "event": "Loaded GOOGLE_API_KEY from individual env var"}
+{"keys": {"GROQ_API_KEY": "gsk_a9...", "GOOGLE_API_KEY": "AQ.Ab8..."}, "timestamp": "2026-09-29T15:13:34.956644Z", "level": "info", "event": "API keys loaded"}
+{"config_keys": ["embedding_model", "retriever", "llm"], "timestamp": "2026-09-29T15:13:34.965710Z", "level": "info", "event": "YAML config loaded"}
+{"error": "unsupported operand type(s) for /: 'WindowsPath' and 'NoneType'", "timestamp": "2026-09-29T15:13:34.974388Z", "level": "error", "event": "Failed to initialize ChatIngestor"}

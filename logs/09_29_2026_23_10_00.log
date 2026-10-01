@@ -1,0 +1,45 @@
+{"timestamp": "2026-09-29T17:40:01.148679Z", "level": "info", "event": "Loaded GROQ_API_KEY from individual env var"}
+{"timestamp": "2026-09-29T17:40:01.152304Z", "level": "info", "event": "Loaded GOOGLE_API_KEY from individual env var"}
+{"keys": {"GROQ_API_KEY": "gsk_a9...", "GOOGLE_API_KEY": "AQ.Ab8..."}, "timestamp": "2026-09-29T17:40:01.157871Z", "level": "info", "event": "API keys loaded"}
+{"config_keys": ["embedding_model", "retriever", "llm"], "timestamp": "2026-09-29T17:40:01.190238Z", "level": "info", "event": "YAML config loaded"}
+{"session_id": "session_20260929_231001_0516d328", "temp_dir": "data\\session_20260929_231001_0516d328", "faiss_dir": "faiss_index\\session_20260929_231001_0516d328", "sessionized": true, "timestamp": "2026-09-29T17:40:01.193689Z", "level": "info", "event": "ChatIngestor initialized"}
+{"uploaded": "C:\\Code\\End2endProject\\data\\Rukhsar_GenAI.pdf", "saved_as": "data\\session_20260929_231001_0516d328\\c12aac37.pdf", "timestamp": "2026-09-29T17:40:01.199867Z", "level": "info", "event": "File saved for ingestion"}
+{"count": 4, "timestamp": "2026-09-29T17:40:01.897094Z", "level": "info", "event": "Documents loaded"}
+{"chunks": 48, "chunk_size": 200, "overlap": 20, "timestamp": "2026-09-29T17:40:01.903240Z", "level": "info", "event": "Documents split"}
+{"model": "models/gemini-embedding-001", "timestamp": "2026-09-29T17:40:01.909996Z", "level": "info", "event": "Loading embedding model"}
+HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-embedding-001:batchEmbedContents "HTTP/1.1 200 OK"
+Loading faiss with AVX2 support.
+Could not load library with AVX2 support due to:
+ModuleNotFoundError("No module named 'faiss.swigfaiss_avx2'")
+Loading faiss.
+Successfully loaded faiss.
+HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-embedding-001:batchEmbedContents "HTTP/1.1 200 OK"
+{"added": 1, "index": "faiss_index\\session_20260929_231001_0516d328", "timestamp": "2026-09-29T17:40:05.845325Z", "level": "info", "event": "FAISS index updated"}
+{"k": 5, "fetch_k": 20, "lambda_mult": 0.5, "timestamp": "2026-09-29T17:40:05.851627Z", "level": "info", "event": "Using MMR search"}
+{"timestamp": "2026-09-29T17:40:05.909540Z", "level": "info", "event": "Loaded GROQ_API_KEY from individual env var"}
+{"timestamp": "2026-09-29T17:40:05.910206Z", "level": "info", "event": "Loaded GOOGLE_API_KEY from individual env var"}
+{"keys": {"GROQ_API_KEY": "gsk_a9...", "GOOGLE_API_KEY": "AQ.Ab8..."}, "timestamp": "2026-09-29T17:40:05.911020Z", "level": "info", "event": "API keys loaded"}
+{"config_keys": ["embedding_model", "retriever", "llm"], "timestamp": "2026-09-29T17:40:05.915803Z", "level": "info", "event": "YAML config loaded"}
+{"provider": "google", "model": "gemini-3.8-flash", "timestamp": "2026-09-29T17:40:05.916368Z", "level": "info", "event": "Loading LLM"}
+{"session_id": "session_20260929_231001_0516d328", "timestamp": "2026-09-29T17:40:06.050064Z", "level": "info", "event": "LLM loaded successfully"}
+{"session_id": "session_20260929_231001_0516d328", "timestamp": "2026-09-29T17:40:06.050656Z", "level": "info", "event": "ConversationalRAG initialized"}
+{"timestamp": "2026-09-29T17:40:06.054173Z", "level": "info", "event": "Loaded GROQ_API_KEY from individual env var"}
+{"timestamp": "2026-09-29T17:40:06.054658Z", "level": "info", "event": "Loaded GOOGLE_API_KEY from individual env var"}
+{"keys": {"GROQ_API_KEY": "gsk_a9...", "GOOGLE_API_KEY": "AQ.Ab8..."}, "timestamp": "2026-09-29T17:40:06.055085Z", "level": "info", "event": "API keys loaded"}
+{"config_keys": ["embedding_model", "retriever", "llm"], "timestamp": "2026-09-29T17:40:06.059335Z", "level": "info", "event": "YAML config loaded"}
+{"model": "models/gemini-embedding-001", "timestamp": "2026-09-29T17:40:06.059803Z", "level": "info", "event": "Loading embedding model"}
+{"session_id": "session_20260929_231001_0516d328", "timestamp": "2026-09-29T17:40:06.168268Z", "level": "info", "event": "LCEL graph built successfully"}
+{"index_path": "faiss_index\\session_20260929_231001_0516d328", "index_name": "index", "search_type": "mmr", "k": 5, "fetch_k": 20, "lambda_mult": 0.5, "session_id": "session_20260929_231001_0516d328", "timestamp": "2026-09-29T17:40:06.169050Z", "level": "info", "event": "FAISS retriever loaded successfully"}
+AFC is enabled with max remote calls: 10.
+Direct use of automatic function calling (AFC) in Models.generate_content is not recommended. Instead, we recommend to use AFC in Chat.send_message. Similarly, direct use of AFC in Models.generate_content_stream is not recommended. Instead, we recommend to use AFC in Chat.send_message_stream.
+HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.8-flash:generateContent "HTTP/1.1 503 Service Unavailable"
+Retrying google.genai._api_client.BaseApiClient._request_once in 1.43 seconds as it raised ServerError: 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}.
+HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.8-flash:generateContent "HTTP/1.1 503 Service Unavailable"
+Retrying google.genai._api_client.BaseApiClient._request_once in 2.75 seconds as it raised ServerError: 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}.
+HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.8-flash:generateContent "HTTP/1.1 503 Service Unavailable"
+Retrying google.genai._api_client.BaseApiClient._request_once in 4.12 seconds as it raised ServerError: 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}.
+HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.8-flash:generateContent "HTTP/1.1 503 Service Unavailable"
+Retrying google.genai._api_client.BaseApiClient._request_once in 8.77 seconds as it raised ServerError: 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}.
+HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.8-flash:generateContent "HTTP/1.1 200 OK"
+HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-embedding-001:batchEmbedContents "HTTP/1.1 500 Internal Server Error"
+{"error": "Error embedding content: 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}", "timestamp": "2026-09-29T17:41:02.080153Z", "level": "error", "event": "Failed to invoke ConversationalRAG"}

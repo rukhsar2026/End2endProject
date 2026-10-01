@@ -1,0 +1,12 @@
+{"timestamp": "2026-09-29T17:11:55.422791Z", "level": "info", "event": "Loaded GROQ_API_KEY from individual env var"}
+{"timestamp": "2026-09-29T17:11:55.423597Z", "level": "info", "event": "Loaded GOOGLE_API_KEY from individual env var"}
+{"keys": {"GROQ_API_KEY": "gsk_a9...", "GOOGLE_API_KEY": "AQ.Ab8..."}, "timestamp": "2026-09-29T17:11:55.424165Z", "level": "info", "event": "API keys loaded"}
+{"config_keys": ["embedding_model", "retriever", "llm"], "timestamp": "2026-09-29T17:11:55.430279Z", "level": "info", "event": "YAML config loaded"}
+{"session_id": "session_20260929_224155_104e7ab1", "temp_dir": "data\\session_20260929_224155_104e7ab1", "faiss_dir": "faiss_index\\session_20260929_224155_104e7ab1", "sessionized": true, "timestamp": "2026-09-29T17:11:55.435766Z", "level": "info", "event": "ChatIngestor initialized"}
+{"uploaded": "C:\\Code\\End2endProject\\data\\NIPS-2017-Attention-Is-All-You-Need.pdf", "saved_as": "data\\session_20260929_224155_104e7ab1\\3490d275.pdf", "timestamp": "2026-09-29T17:11:55.443906Z", "level": "info", "event": "File saved for ingestion"}
+{"count": 15, "timestamp": "2026-09-29T17:12:00.031564Z", "level": "info", "event": "Documents loaded"}
+{"chunks": 248, "chunk_size": 200, "overlap": 20, "timestamp": "2026-09-29T17:12:00.059550Z", "level": "info", "event": "Documents split"}
+{"model": "models/text-embedding-005", "timestamp": "2026-09-29T17:12:00.066864Z", "level": "info", "event": "Loading embedding model"}
+HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-005:batchEmbedContents "HTTP/1.1 404 Not Found"
+HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-005:batchEmbedContents "HTTP/1.1 404 Not Found"
+{"error": "Error embedding content (NOT_FOUND): 404 NOT_FOUND. {'error': {'code': 404, 'message': 'models/text-embedding-005 is not found for API version v1beta, or is not supported for embedContent. Call ModelService.ListModels to see the list of available models and their supported methods.', 'status': 'NOT_FOUND'}}", "timestamp": "2026-09-29T17:12:01.070998Z", "level": "error", "event": "Failed to build retriever"}

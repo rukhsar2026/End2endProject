@@ -1,0 +1,98 @@
+1. What is Agentic AI?
+
+Agentic AI is an AI system that can pursue a goal by reasoning about the task, deciding what actions to take, taking those actions, observing the results, and adapting its next actions accordingly.
+
+The key idea is goal-oriented autonomous behavior.
+
+Traditional GenAI:
+
+Input → Generate response
+
+Agentic AI:
+
+Goal → Reason → Decide → Act → Observe → Adapt → Complete goal
+
+2. AI Agent
+
+An AI agent is a system that perceives information from its environment and takes actions to achieve a given objective.
+
+Conceptually:
+
+Agent = Perception + Reasoning + Decision-making + Action
+
+For example:
+
+Goal: Resolve a customer's payment problem.
+
+The agent may determine:
+
+Identify the customer.
+Check the order.
+Check payment status.
+Determine why payment failed.
+Decide what action is appropriate.
+Take the action.
+Verify the result.
+3. Main characteristics of Agentic AI
+Autonomy
+
+The system can decide the next step without requiring the user to explicitly specify every step.
+
+Goal-oriented behavior
+
+The agent works toward an objective rather than simply generating text.
+
+Reasoning
+
+It analyzes the current situation and determines what should happen next.
+
+Planning
+
+It can break a larger goal into smaller tasks.
+
+Action
+
+It can interact with an external environment to accomplish tasks.
+
+Adaptability
+
+It can change its approach based on the results it receives.
+
+Persistence
+
+It can maintain state while working through a multi-step task.
+
+4. Agentic AI vs Generative AI
+
+They are related but not identical.
+
+Generative AI
+
+Primarily focuses on creating content.
+
+Examples:
+
+Generate text
+Generate code
+Generate an image
+Summarize a document
+Answer a question
+Agentic AI
+
+Focuses on achieving a goal through a sequence of decisions and actions.
+
+For example:
+
+Generative AI:
+
+"Write an email asking the customer to retry the payment."
+
+Agentic AI:
+
+"Determine why the payment failed and take the appropriate steps to resolve the problem."
+
+So:
+
+Generative AI focuses on generation.
+Agentic AI focuses on goal-directed action.
+

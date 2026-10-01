@@ -1,0 +1,2 @@
+{"missing_keys": ["GROQ_API_KEY", "GOOGLE_API_KEY"], "timestamp": "2026-09-29T15:11:55.389197Z", "level": "error", "event": "Missing required API keys"}
+{"error": "Error in [<unknown>] at line [-1] | Message: Missing API keys", "timestamp": "2026-09-29T15:11:55.392862Z", "level": "error", "event": "Failed to initialize ChatIngestor"}
